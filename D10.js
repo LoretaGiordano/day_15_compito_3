@@ -445,6 +445,7 @@ const selezionaContainer = () => {
   const container = document.getElementById('container')
   return container
 }
+
 selezionaContainer()
 
 /* ESERCIZIO 21
