@@ -380,19 +380,31 @@ console.log(countMovies(movies))
 Scrivi una funzione chiamata "onlyTheYears" che crea un array con solamente gli anni di uscita dei film 
 contenuti nell'array "movies" fornito.
 */
-const years = []
-const onlyTheYears = (movies) => {
+const onlyTheYears = (moviess) => {
+  const years = []
   for (let i = 0; i < movies.length; i++) {
-    return years.push(movies[i].years)
+    years.push(movies[i].year)
   }
+  return years
 }
 onlyTheYears(movies)
-console.log(years)
+console.log(onlyTheYears(movies))
 
 /* ESERCIZIO 15
 Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso
 contenuti nell'array "movies" fornito.
 */
+const onlyInLastMillennium = (array) => {
+  const lastMillennium = []
+  for (let i = 0; i < movies.length; i++) {
+    if (movies[i].year > 2000) {
+      lastMillennium.push(movies[i])
+    }
+    return lastMillennium
+  }
+}
+onlyInLastMillennium(movies)
+console.log(onlyInLastMillennium(movies))
 
 /* ESERCIZIO 16
 Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati 
